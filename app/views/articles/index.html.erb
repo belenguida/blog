@@ -1,5 +1,5 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-<link href="articles.css" rel="stylesheet">
+<link href="articles.scss" type="text/css" rel="stylesheet">
 
 <!-- Encabezado - Menu principal -->
 <div class="jumbotron text-center">
@@ -17,7 +17,9 @@
 </div>
 
 <!--  Album - Agrupado -->
-<div>
+<div class="bg">
+
+<div class="container">
 <% @articles.in_groups_of(2, false) do |group| %>
 
 <div class="col-md-4">
@@ -40,3 +42,6 @@
 
 </div>
 <%end%>
+
+</div>
+</div>
